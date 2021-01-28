@@ -51,10 +51,17 @@ a {
   color: var(--color-white);
 }
 ul {
-  list-style: none;
   padding-left: 0;
 }
-
+li {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 /* Typography (웹 전반에 쓰여진 텍스트의 패딩에 대한 스타일링)*/
 h1 {
   font-size: var(--font-large);
@@ -116,4 +123,31 @@ p {
 .navbar__menu__item:hover {
   background-color: var(--color-blue);
   border-radius: var(--size-border-radius);
+}
+
+/* Home */
+#home {
+  background: url("img/background2.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  color: var(--color-white);
 }
