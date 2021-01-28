@@ -18,6 +18,8 @@
   --color-lemon: #f2e744;
   --color-orange: #fca147;
   --color-black: #000000;
+  --color-theme1: #96dffb;
+  --color-theme2: #aecdf2;
 
   /* Font size  */
   --font-large: 48px;
@@ -91,11 +93,18 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: var(--color-light-sky);
+  background-color: transparent;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-theme2);
 }
 .navbar__menu {
   display: flex;
@@ -137,6 +146,7 @@ p {
 #home {
   background: url("img/background2.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -401,7 +411,7 @@ p {
 /* Contact */
 
 #contact {
-  background-color: var(--color-bluepurple);
+  background-color: var(--color-theme2);
 }
 .contact__title,
 .contact__email,
