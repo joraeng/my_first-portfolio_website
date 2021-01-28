@@ -49,7 +49,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section section__contariner">
         <h1>About me</h1>
         <p>
             I am a student studying programming at Inha University. 
@@ -85,7 +85,7 @@
                 <h2 class="major__title">Others</h2>
                 <div class="major__description">
                     C++, Unreal Engine, C#,
-                    <br />Unity, PhotoShops
+                    Unity, <br> Python, PhotoShop
                 </div>
             </div>
         </div>
@@ -109,79 +109,81 @@
     
     <!-- Skills -->
     <section id="skills" class="section">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>Ability to study and work on a systematic plan. Planning skills obtained by directly planning and managing games, web shopping malls, etc.; The experience of collaborating with the team and conducting the competition.</p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>64%</span>
+        <div class="section__contariner">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>Ability to study and work on a systematic plan. Planning skills obtained by directly planning and managing games, web shopping malls, etc.; The experience of collaborating with the team and conducting the competition.</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>64%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 64%"></div>
+                        </div>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>34%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 34%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Node.js</span>
+                            <span>54%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 54%"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>CSS</span>
-                        <span>70%</span>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Visual Stdio</span></li>
+                            <li><span>IntelliJ</span></li>
+                            <li><span>Notion</span></li>
+                            <li><span>OneNote</span></li>
+                            <li><span>PhotoShop</span></li>
+                        </ul>
+                    </div> 
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                            <li><span>PhotoShop</span></li>
+                            <li><span>Planning</span></li>
+                        </ul>
                     </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>JavaScript</span>
-                        <span>40%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>React</span>
-                        <span>34%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Node.js</span>
-                        <span>54%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Visual Stdio</span></li>
-                        <li><span>IntelliJ</span></li>
-                        <li><span>Notion</span></li>
-                        <li><span>OneNote</span></li>
-                        <li><span>PhotoShop</span></li>
-                    </ul>
                 </div> 
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Git</span></li>
-                        <li><span>PhotoShop</span></li>
-                        <li><span>Planning</span></li>
-                    </ul>
-                </div>
-            </div> 
+            </div>
         </div>
     </section>
     <!-- Works -->
@@ -189,7 +191,7 @@
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="wrok__categories">
-            <button class="category__btn">All <span class="category__count">5</span></button>
+            <button class="category__btn active">All <span class="category__count">8</span></button>
             <button class="category__btn">Front-end <span class="category__count">2</span></button>
             <button class="category__btn">Back-end <span class="category__count">2</span></button>
             <button class="category__btn">Othetrs <span class="category__count">1</span></button>
@@ -197,63 +199,55 @@
 
         <div class="work__projects">
             <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
-            class="project__img" 
+            class="project"
             target="blank">
-            <img src="img/projects/RICE_SITE_PJ.jpg" alt="Rice">
+            <img src="img/projects/RICE_SITE_PJ.png" alt="Rice" class="project__img" >
             <div class="project__description">
-                <h3>RICE SITE</h3>
+                <h3>Student Council Web Site Project</h3>
                 <span>Made Webstie for Student council at Hackathon</span>
             </div>
             </a>
+            </a>
             <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
-            class="project__img" 
+            class="project" 
             target="blank">
-            <img src="img/projects/KOKOA.jpg" alt="Rice">
+            <img src="img/projects/KOKOA.png" alt="Rice" class="project__img" >
             <div class="project__description">
                 <h3>KOKOA TALK</h3>
                 <span>Clone coding kakao talk with html&css</span>
             </div>
             </a>
             <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
-            class="project__img" 
+            class="project" 
             target="blank">
-            <img src="img/projects/naver_store.jpg" alt="Rice">
+            <img src="img/projects/naver_store.png" alt="Rice" class="project__img" >
             <div class="project__description">
                 <h3>Naver_store</h3>
                 <span>Clone coding naver store with html&css</span>
             </div>
             </a>
             <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
-            class="project__img" 
+            class="project" 
             target="blank">
-            <img src="img/projects/game.jpg" alt="Rice">
+            <img src="img/projects/game.png" alt="Rice" class="project__img" >
             <div class="project__description">
                 <h3>Game_Practice</h3>
                 <span>Made a game with Unity</span>
             </div>
             </a>
             <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
-            class="project__img" 
+            class="project" 
             target="blank">
-            <img src="img/projects/BOARD__PR_PJ.jpg" alt="Rice">
+            <img src="img/projects/BOARD__PR_PJ.png" alt="Rice" class="project__img" >
             <div class="project__description">
                 <h3>Board</h3>
                 <span>Made a Board function</span>
             </div>
             </a>
             <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
-            class="project__img" 
+            class="project" 
             target="blank">
-            <img src="img/projects/JRP__temp.jpg" alt="Rice">
-            <div class="project__description">
-                <h3>JoraengPong temp site</h3>
-                <span>joraeng pong temp site</span>
-            </div>
-            </a>
-            <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
-            class="project__img" 
-            target="blank">
-            <img src="img/projects/BOOTSTRAP.jpg" alt="Rice">
+            <img src="img/projects/BOOTSTRAP.png" alt="Rice" class="project__img" >
             <div class="project__description">
                 <h3>Bootstrap5</h3>
                 <span>made a reactive website with Bootstrap5</span>
@@ -262,7 +256,16 @@
             <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
             class="project" 
             target="blank">
-            <img src="img/projects/REACTIVE_WEB.jpg" alt="Rice">
+            <img src="img/projects/JRP__temp.png" alt="Rice" class="project__img" >
+            <div class="project__description">
+                <h3>JoraengPong temp site</h3>
+                <span>joraeng pong temp site</span>
+            </div>
+            </a>
+            <a href="https://github.com/int-i/2021-Super-Challenge-Hackathon" 
+            class="project" 
+            target="blank">
+            <img src="img/projects/REACTIVE_WEB.png" alt="Rice" class="project__img" >
             <div class="project__description">
                 <h3>Reactive web</h3>
                 <span>Clone coding Reactive web site with dreamcoding</span>
