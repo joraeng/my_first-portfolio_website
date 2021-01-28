@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/f5b938888d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="img/favicon-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
@@ -33,7 +34,6 @@
             </ul>
         </div>
     </nav>
-
     <!-- Home -->
     <section id="home">
         <img 
@@ -43,13 +43,13 @@
         />
         <h1 class="home__title">Hello, <br />I'm Seonwoo Kim</h1>
         <h3 class="home__description">
-            A Student studying Front&Back-End Engineering, in Incheon, Korea   
+            A Student studying Front&Back-End Devolpment residing in Incheon, Korea   
         </h3>
         <button class="home__contact">Contatct Me</button>
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
         <p>
             I am a student studying programming at Inha University. 
@@ -62,7 +62,7 @@
                 <div class="major__icon">
                     <i class="fab fa-react"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript, Typesript,
                     <br />React, Web APIS
@@ -72,39 +72,43 @@
                 <div class="major__icon">
                     <i class="fab fa-node-js"></i>
                 </div>
-                <div class="major__title">Back-end</div>
+                <h2 class="major__title">Back-end</h2>
                 <div class="major__description">
                     JavaScript, Node.js, Express, Nest.js,
                     <br /> MySQL, MongoDB
                 </div>
+            </div>
             <div class="major">
                 <div class="major__icon">
                     <i class="fab fa-unity"></i>
                 </div>
-                <div class="major__title">Others</div>
+                <h2 class="major__title">Others</h2>
                 <div class="major__description">
                     C++, Unreal Engine, C#,
                     <br />Unity, PhotoShops
                 </div>
             </div>
-            </div>
         </div>
         <div class="about__jobs">
-            <div class="jop">
-                <img src="img/InhaUniversity_Emblem.jpg" alt="" class="job__logo">
-                <p class="job__name">Currently studying at Inha University as student</p>
-                <p class="job__period">2019 March - Until now</p>
+            <div class="job">
+                <img src="img/InhaUniversity_Emblem.jpg" alt="" for="inha">
+                <div class="job__description">
+                    <p class="job__name">Currently studying at Inha University as student</p>
+                    <p class="job__period">2019 March - Until now</p>
+                </div>
             </div>
-            <div class="jop">
-                <img src="img/RICE_LOGO.png" alt="" class="job__logo">
-                <p class="job__name">Currently activating at Inha Univeristy Student council</p>
-                <p class="job__period">2019 March - Until now</p>
+            <div class="job">
+                <img src="img/RICE_LOGO.png" alt="" for="rice">
+                <div class="job__description">
+                    <p class="job__name">Currently activating at Inha Univeristy Student council</p>
+                    <p class="job__period">2019 March - Until now</p>
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>Ability to study and work on a systematic plan. Planning skills obtained by directly planning and managing games, web shopping malls, etc.; The experience of collaborating with the team and conducting the competition.</p>
@@ -181,7 +185,7 @@
         </div>
     </section>
     <!-- Works -->
-    <section id="works">
+    <section id="works" class="section">
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="wrok__categories">
@@ -268,7 +272,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonals">
@@ -295,7 +299,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">sunwoo005@gmail.com</h2>
         <div class="contact__links">
