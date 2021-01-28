@@ -105,6 +105,7 @@ p {
 
 #navbar.navbar--dark {
   background-color: var(--color-theme2);
+  padding: 8px;
 }
 .navbar__menu {
   display: flex;
