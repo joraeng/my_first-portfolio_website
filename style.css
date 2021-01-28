@@ -436,6 +436,25 @@ p {
   color: var(--color-pink);
 }
 
+/* Arrow */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 50px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-light-sky);
+  color: var(--color-white);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--animation-duration) ease-in;
+}
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 /* For below 768px screen width */
 
 @media screen and (max-width: 768px) {
