@@ -22,14 +22,22 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null){
         return ;
     }
+    navbarMenu.classList.remove('open');
     
-
     const scrollTo = document.querySelector(link);
     // 클릭한 요소의 data-link 값을 받아와서 scrollTo에 저장
     //scrollTo(element)가 내장하는 함수를 사용. 해당 함수의 내용은 모르지만
     // 해당 값을 가진 ID가 있는 곳으로 넘어가는 함수인 듯 하다
     scrollTo.scrollIntoView({behavior: "smooth"});
 });
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () =>{
+    navbarMenu.classList.toggle('open');
+});
+
+
 // Handdle click on "contact me" button on home
 const contactbtn = document.querySelector('.home__contact');
 contactbtn.addEventListener('click', () =>{
