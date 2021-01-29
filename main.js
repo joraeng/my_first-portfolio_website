@@ -57,6 +57,30 @@ arrowUp.addEventListener('click', ()=>{
     scrollIntoView('#home');
 });
 
+// Projects
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+    // 버튼을 클릭하면 dataset.filter 값을 받아와서 변수에 저장, 그런데 버튼 속 span을 눌러서
+    // 값이 없을 경우 부모 노드의 dataset 값을 참조하도록 한다 
+    // 근데 여기서 || 를 써도 저게 동작이 되는 이유가 뭘까..?  -> notion 정리
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if (filter ==null) {
+        return;
+    }
+    projectContainer.classList.add('anim-out');
+    setTimeout(() => {
+        projects.forEach((project) => {
+            if(filter === '*' || filter === project.dataset.type){
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    },300);
+});
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
